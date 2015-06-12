@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>面向对象编程</title>
+    </head>
+    <body>
+    <script src="extend.js"></script>
+    <script>
+var Human = Class.extend({
+    say: function () {
+        console.log("Hello");
+    }
+});
+
+var human = Human.create();
+human.say();
+
+var Man = Human.extend({
+    walk: function () {
+        console.log("walk");
+    }
+});
+
+var man = Man.create({
+    name: "Lee",
+    age: 22
+});
+
+console.log(man);
+man.say();
+man.walk();
+    </script>
+    </body>
+</html>
