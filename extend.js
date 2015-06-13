@@ -1,4 +1,4 @@
-//object.create¶Ôie8ÏÂµÄ¼æÈİ
+//object.create
 if(!Object.create){
     Object.create = (function(){
         var F = function(){}
